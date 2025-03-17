@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IETE-KJSIT</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="stylesheet" href="./events.css" />
+  <link rel="stylesheet" href="./navbar.css" />
+  <link rel="stylesheet" href="./footer.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo"><img src="./assets/IETE-logo.png" alt="logo" /></a>
+      <div class="hamburger" id="hamburger">
+        <span class="line" id="line1"></span>
+        <span class="line" id="line2"></span>
+        <span class="line" id="line3"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="../iete-teams/teams_2024-2025.html">Teams</a></li>
+        <li><a href="../iete-about/about-us.html">About Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="events">
+    <h1 class="title-box">EVENTS</h1>
+
+    <!--Hackathon Section -->
+    <section class="hackathon-section">
+      <!-- <h2>Hackathon</h2> -->
+      <div class="hackathon-grid">
+        <div class="hackathon-card">
+          <img src="./assets/hackathon.png" alt="Hackathon" />
+        </div>
+        <div class="hackathon-info">
+          <p>Join us for an exciting hackathon challenge where innovation meets execution</p>
+          <p><strong>Date:</strong> 5th & 6th April</p>
+          <p><strong>Time:</strong></p>
+          <p><strong>Venue:</strong> KJSIT Campus</p>
+          <div class="register-btn-container">
+            <a href="#" target="_blank">
+              <button class="register-btn">Register Now</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timer Section Begins -->
+
+    <div class="timer-section">
+      <div class="day-section">
+        <div class="day-count count-section" id="remaining-days">00</div>
+        <div class="timer-text text-section">days</div>
+      </div>
+      <div class="colon-section">:</div>
+      <div class="hour-section">
+        <div class="hour-count count-section" id="remaining-hours">00</div>
+        <div class="timer-text text-section">hours</div>
+      </div>
+      <div class="colon-section">:</div>
+      <div class="minute-section">
+        <div class="minute-count count-section" id="remaining-minutes">00</div>
+        <div class="timer-text text-section">minutes</div>
+      </div>
+      <div class="colon-section">:</div>
+      <div class="second-section">
+        <div class="second-count count-section" id="remaining-seconds">00</div>
+        <div class="timer-text text-section">seconds</div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer id="footer">
+    <div class="f-info">
+      <div class="f-info-socials">
+        <a href="https://www.linkedin.com/company/iete-kjsieit/mycompany/"><img src="./images/linkedin.png"
+            alt="linkedin" /></a>
+        <a href="https://www.instagram.com/iete_kjsit/"><img src="./images/instagram.png" alt="instagram" /></a>
+      </div>
+      <div class="f-info-brand">
+        <h3>
+          Made with <span style="color: red">&#10084;</span> By IETE Technical
+          Team <span>&copy;</span> 2024-25
+        </h3>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./timer.js"></script>
+  <script src="./events.js"></script>
+  <script src="./navbar.js"></script>
+</body>
+
+</html>
